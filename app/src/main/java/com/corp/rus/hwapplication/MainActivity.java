@@ -91,6 +91,10 @@ public class MainActivity extends AppCompatActivity {
         textView.setText("Third tab");
     }
 
+    /**
+     * Mark tabs as disabled
+     * @param elementIDs
+     */
     private void markDisabled(Integer... elementIDs) {
         for (int i = 0; i < elementIDs.length; i++) {
             TextView tab = (TextView) findViewById(elementIDs[i]);
