@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/secondViewContent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.corp.rus.hwapplication.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <HorizontalScrollView
+        android:id="@+id/hor_svID"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:background="@color/colorAccent"
+        android:fillViewport="false"
+        android:focusable="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:focusable="false"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TechnologyTxtVId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="TECHNOLOGY"
+                android:textColor="#342D7E"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:onClick="openFirstTab"></TextView>
+
+            <TextView
+                android:id="@+id/SportsTxtVId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingLeft="15dip"
+                android:text="SPORTS"
+                android:textColor="#342D7E"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:background="@color/colorPrimaryDark"></TextView>
+
+            <TextView
+                android:id="@+id/EntntTxtVId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingLeft="15dip"
+                android:text="ENTERTAINMENT"
+                android:textColor="#342D7E"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second TAB"
+        android:layout_below="@+id/hor_svID"/>
+
+
+</RelativeLayout>

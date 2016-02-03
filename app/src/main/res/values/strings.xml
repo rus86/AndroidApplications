@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HWApplication</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit_message">Please enter message</string>
+    <string name="button_send">Send message</string>
+    <string name="title_activity_display_message">Second Activity</string>
+</resources>
